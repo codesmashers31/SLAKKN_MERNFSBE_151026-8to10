@@ -1,0 +1,56 @@
+Folders - File - Browser know - colsone
+
+HTML5 - Tags - Elements - Block Level - Inline - Sementic - Non Sementic - Attribute - Formating Tags - Interactive tags - form - table - list - meta - cards - SEO - Media - SVG - Illustart - favicon
+
+CSS3 - Types - selectors - syntex - Box Model - Colors - flex - grid - media quesry - positions - pshoytoclass - elements - z-index - 
+
+
+Bootstrap - 5 - Link - CDN - Classes - Nav - banners - cards - form - table - corosels - modal - tooltips - toster - toggle - col-6 - 12
+Tailwindcss - 4 Same Tailwindcss - CDN
+JS - DOM - ES6+ - 
+Fundamentales - JS - variables - Data types - primitive & Non Primitive - Operatores - (AACLID) -((Selection Staments)) - Conditions - Control - Functions - array - object - array of objects
+Higher Order array methdos - 
+ES6+ -  
+
+Scope - Hoisting - 
+
+DOM - Selectors - properties - Event - function - array rendering object 
+form - 
+
+Local Stroage - session  cookies
+
+Fetch APIs - Mordern Tools
+
+React - Vite - Axios - React-Router-DOM
+Project - Component - Rendering - react-router-dom(Compponents - Hooks) - 
+Update - Hooks - useState - useEffect
+
+Node
+Express
+Mongodb
+Cors
+JSON
+
+AI Tools - 
+
+4 Project - 1 other - java - python React + Node
+(UI/UX - 4) - php wordpress - jquery - ajax - React Native - sql
+
+
+
+GitHub  - link
+Git
+
+Linkedin - post
+
+
+Email template - 4
+
+
+Mock 4 - 
+
+TAC
+
+Placement support - 
+
+
