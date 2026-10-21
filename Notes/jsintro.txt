@@ -1,0 +1,51 @@
+Domain - Web Development
+Files - Language - HTML5
+JS - Veriables - 
+
+Variable Declaration - variable keywords - var - let - const 
+
+Name - 
+
+Variable keyword name; - it returens the undefind
+
+Memory Allocation.
+
+Intilization - Variable keyword name = values(Data Types).
+
+userName
+UserName 
+User_Name
+User_Name
+User_Name
+btn btn-info
+bg-blue-300
+
+primitive & Non Primitive
+String
+Number
+Boolean
+Null 
+undefind
+Bigint
+
+Non Primitive
+Functions
+Array 
+Object 
+Array Of Objects
+
+ES6
+
+Scopes 4 - Globel - Functinal - Blcok - Lexical
+Hoisting 3 TDZ
+
+{
+
+}
+
+const data = ()=>{
+   
+
+
+   
+}
