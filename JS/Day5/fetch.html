@@ -1,0 +1,88 @@
+
+<div id="showData">
+
+</div>
+
+
+<script>
+
+    // const showing = document.getElementById("showData")
+    
+
+    //  fetch("https://dummyjson.com/products").then((res)=>{
+
+    //        return res.json()
+
+    //    }).then((data)=>{
+
+    //         let products = data.products
+
+    //         console.log(products);
+      
+    //        let myDatas = ""
+
+    //        products.forEach(element => {
+
+    //         myDatas += `<h2>
+                
+    //             Titel ${element.title}
+                
+    //             </h2>`
+            
+    //        });
+
+
+    //        showing.innerHTML = myDatas
+            
+            
+    //    }).catch((e)=>{
+
+    //     console.log(e);
+        
+
+    //    }).finally(()=>{
+    //     console.log("Clear");
+        
+    //    })
+
+
+
+    const getDatas = async ()=>{
+
+        const showing = document.getElementById("showData")
+         
+        try{
+            
+        const getdata = await fetch("https://dummyjson.com/products") 
+
+        const change = await getdata.json()
+
+        let products = change.products
+
+
+        let myDatas = ""
+
+           products.forEach(element => {
+
+            myDatas += `<h2>
+                
+                Titel ${element.title}
+                
+                </h2>`
+            
+           });
+
+              showing.innerHTML = myDatas
+              
+        }catch(e){
+            
+            console.log(e);
+            
+        }
+
+    }
+
+
+    getDatas()
+
+</script>
