@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    
+    <div>
+        <h1 id="title" style="display: block;">
+            This is Text
+        </h1>
+        <button id="btn">Click</button>
+    </div>
+
+    <script>
+    //    console.log(document.body);
+
+    const title = document.getElementById("title")
+    const btn = document.querySelector("#btn")
+    
+    // const handleClick = ()=>{
+
+    //     title.innerHTML="This is the process"
+
+    // }
+
+    // btn.addEventListener("click",()=>{
+
+    //     // title.style.display = "none"
+    //     console.log(title.style.display)
+        
+    //     if(title.style.display === "block"){
+
+    //         title.style.display = "none"
+
+    //     }else{
+    //          title.style.display = "block"
+    //     }
+
+    //     // title.innerHTML  += "This is the process"
+
+    // })
+
+
+    btn.addEventListener("click",()=>{
+
+        console.log(title);
+        
+        
+        title.textContent = "This is Text html for the propces"
+        title.style.color = "white"
+        title.style.backgroundColor = "blue"
+        title.style.padding = "10px"
+
+    })
+
+    
+
+       
+    </script>
+</body>
+</html>

@@ -47,42 +47,92 @@
 
 
 
-    const getDatas = async ()=>{
+    // const getDatas = async ()=>{
 
-        const showing = document.getElementById("showData")
+    //     const showing = document.getElementById("showData")
          
-        try{
+    //     try{
             
-        const getdata = await fetch("https://dummyjson.com/products") 
+    //     const getdata = await fetch("https://dummyjson.com/products") 
 
-        const change = await getdata.json()
+    //     const change = await getdata.json()
 
-        let products = change.products
+    //     let products = change.products
 
 
-        let myDatas = ""
+    //     let myDatas = ""
 
-           products.forEach(element => {
+    //        products.forEach(element => {
 
-            myDatas += `<h2>
+    //         myDatas += `<h2>
                 
-                Titel ${element.title}
+    //             Titel ${element.title}
                 
-                </h2>`
+    //             </h2>`
             
-           });
+    //        });
 
-              showing.innerHTML = myDatas
+    //           showing.innerHTML = myDatas
               
-        }catch(e){
+    //     }catch(e){
+
+    //         console.log(e);
             
-            console.log(e);
+    //     }
+
+    // }
+
+
+    // getDatas()
+
+
+
+
+    // const myPromise = new Promise ((resolve,reject)=>{
+
+       
+    //        let number = 3
+
+           
+    //        if(number%2===0){
+    //            resolve("Even")
+    //        }else{
+    //         reject("Odd")
+    //        }
+
+
+    // })
+
+
+    // myPromise.then((e)=>{console.log(e);
+    // }).catch((error)=>{
+    //         console.log(error);
             
-        }
-
-    }
+    // })
 
 
-    getDatas()
+
+//     const getDatas = async ()=>{
+//          let number = 3
+         
+//           if(number%2===0){
+
+//             let datas = "even"
+
+//             console.log(datas);
+            
+              
+//            }else{
+             
+//              console.log("Odd");
+             
+
+//            }
+     
+
+//     }
+
+//    getDatas()
+    
 
 </script>

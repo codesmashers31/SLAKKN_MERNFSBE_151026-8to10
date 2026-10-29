@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM -- Showing</title>
+</head>
+<body>
+
+    <button id="objbtn">OBJ</button>
+    <button id="arrbtn">ARR</button>
+    <button id="arrobjnew">ARROBJ</button>
+
+    <div id="objshow" style="display: none;">
+
+    </div>
+
+    <div id="arrnew"  style="display: none;">
+
+    </div>
+
+    <div id="arrobjshow"  style="display: none;">
+
+    </div>
+
+
+
+
+    <script>
+        const obj = {name:"React",age:12,pass:"1234"}
+        const arr = [1,2,3,4,5,6,7]
+
+        const arrobj = [
+
+            {name:"React",age:12,pass:"12342"},
+            {name:"Node",age:23,pass:"12345"},
+            {name:"Js",age:24,pass:"12346"},
+            {name:"HTML",age:28,pass:"12347"}
+
+        ]
+
+        const objselect = document.getElementById("objshow")
+        const arrselect = document.getElementById("arrnew")
+        const objarrselect = document.getElementById("arrobjshow")
+        
+        const objbtn = document.getElementById("objbtn")
+        const arrbtn = document.getElementById("arrbtn")
+        const arrobjbtn = document.getElementById("arrobjnew")
+      
+       objbtn.addEventListener("click",()=>{
+              
+                objselect.innerHTML = `
+                    
+                    <h1>${obj.name}</h1>
+                    <h1>${obj.age}</h1>
+                    <h1>${obj.pass}</h1>
+                 
+                `
+
+
+                objselect.style.display = "block"
+
+
+       }
+    )
+
+       arrbtn.addEventListener("click",()=>{
+
+
+               let list = ""
+
+                arr.forEach((e)=>{
+                    list += `
+                    
+                     <h1>${e}</h1>
+                   
+                    
+                    `
+                })
+              
+                arrselect.innerHTML = list
+
+                objselect.style.display = "none"
+
+                arrselect.style.display = "block"
+
+       })
+
+
+
+       arrobjbtn.addEventListener('click',()=>{
+
+            
+               let list = ""
+               
+
+                arrobj.forEach((e)=>{
+                    list += `
+                    
+                     <h1>${e.name}</h1>
+                     <h1>${e.age}</h1>
+                     <h1>${e.pass}</h1>
+                    
+                    `
+                })
+              
+                objarrselect.innerHTML = list
+
+                objselect.style.display = "none"
+
+                arrselect.style.display = "none"
+
+                objarrselect.style.display = "block"
+
+
+   
+
+       })
+
+     
+
+
+
+    </script>
+</body>
+</html>

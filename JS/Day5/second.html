@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>second larget</h1>
+    <script>
+        const secondlargest=(...numbers)=>{
+            let largest=numbers[0]
+            let second=numbers[0]
+            for(let a=0; a<numbers.length; a++){
+                if(numbers[a]>largest){
+                    second=largest
+                    largest=numbers[a]
+                }
+                else if(numbers[a]>second&&numbers[a]<largest){
+                    second=numbers[a]
+                }
+            }
+            return second
+        }
+        console.log(secondlargest(50,25,5,40,30));
+        
+
+
+
+        
+        
+    </script>
+    
+</body>
+</html>

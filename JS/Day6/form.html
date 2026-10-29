@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form id="myform">
+         <input type="text" id="username" placeholder="Enter the Name">
+         <input type="email" id="useremail" placeholder="Enter the Email">
+         <input type="submit" value="Regsiter">
+    </form>
+
+    <div id="mydatas">
+
+    </div>
+
+
+    <script>
+        const datas = document.getElementById("myform")
+        const mydatas = document.getElementById("mydatas")
+        let arr = []
+
+        datas.addEventListener("submit",(event)=>{
+
+            event.preventDefault()
+ 
+            const name = document.getElementById("username")
+            const email = document.getElementById("useremail")
+            
+            const muser = name.value
+            const memail = email.value
+
+
+            if(!muser || !memail){
+                alert("Fill the Form")
+                return
+            }
+
+            const checkuser = arr.find((e)=>e.memail==memail)
+             console.log(checkuser);
+             
+            if(checkuser){
+                alert("Alerady Email Register")
+                return
+            }
+
+            const obj = {muser,memail}
+
+
+            //console.log(obj);
+
+            
+           
+              arr.push(obj)
+
+            console.log(arr);
+
+            let datasnew = ""
+
+            arr.forEach(element => {
+
+               datasnew += `
+               
+               <div>
+                <h2>${element.muser}</h2>
+                <p>${element.memail}</p>
+                </div>
+               
+               `
+
+                
+            });
+
+            mydatas.innerHTML = datasnew
+        
+
+        })
+    </script>
+</body>
+</html>
