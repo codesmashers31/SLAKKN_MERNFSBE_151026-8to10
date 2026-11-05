@@ -1,0 +1,12 @@
+
+
+const Home = () => {
+  return (
+    <>
+    
+    <div className="bg-red-300 p-10 flex justify-center items-center h-100">Home</div>
+    </>
+  )
+}
+
+export default Home
